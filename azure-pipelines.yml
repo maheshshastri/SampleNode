@@ -19,3 +19,17 @@ steps:
     npm install
 #    npm run build
   displayName: 'npm install and build'
+
+- task: VisualStudioTestPlatformInstaller@1
+  inputs:
+    packageFeedSelector: 'nugetOrg'
+    versionSelector: 'latestPreRelease'
+- task: InstallTestCompleteAdapter@1
+  inputs:
+    installExecutor: true
+- task: VSTest@2
+  inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: 'C:\Users\maheshs\Documents\TestComplete 15 Projects\Integration_POC>TestComplete Integration_POC.pjs'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    vsTestVersion: 'toolsInstaller'
