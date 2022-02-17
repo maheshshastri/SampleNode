@@ -30,6 +30,6 @@ steps:
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: 'C:\Users\maheshs\Documents\TestComplete 15 Projects\Integration_POC>TestComplete Integration_POC.pjs'
+    testAssemblyVer2: 'C:\Users\maheshs\Documents\TestComplete 15 Projects\Integration_POC\Integration_POC.pjs'
     searchFolder: '$(System.DefaultWorkingDirectory)'
     vsTestVersion: 'toolsInstaller'
