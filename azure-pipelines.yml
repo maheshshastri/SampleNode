@@ -34,3 +34,5 @@ steps:
     testAssemblyVer2: 'C:\Users\maheshs\Documents\TestComplete 15 Projects\Integration_POC\Integration_POC.pjs'
     searchFolder: '$(System.DefaultWorkingDirectory)'
     vsTestVersion: 'toolsInstaller'
+    
+    # Demo CI Integration
